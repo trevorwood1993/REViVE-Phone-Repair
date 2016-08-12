@@ -11,14 +11,7 @@
 	<meta name="keywords" content="iphone repair mandeville, mandeville la cell phone repair, iphone fix, screen replacement, northshore iphone repair, iphone repair 70448, smart phone repairs, smart phone repair, cell phone repairs, smart phone screen replacement, smart phone buybacks,">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Alice&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,200,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Coustard&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700|Coustard' rel='stylesheet' type='text/css'>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
