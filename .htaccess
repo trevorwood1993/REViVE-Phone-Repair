@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteRule ^index$ index.php [NC,L,B,QSA]
+RewriteRule ^about$ about.php [NC,L,B,QSA]
+RewriteRule ^contact$ contact.php [NC,L,B,QSA]
+RewriteRule ^services$ services.php [NC,L,B,QSA]
+RewriteRule ^location$ location.php [NC,L,B,QSA]
