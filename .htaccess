@@ -12,3 +12,13 @@ RewriteRule ^about.html$ about.php [NC,L,B,QSA]
 RewriteRule ^contact.html$ contact.php [NC,L,B,QSA]
 RewriteRule ^services.html$ services.php [NC,L,B,QSA]
 RewriteRule ^location.html$ location.php [NC,L,B,QSA]
+
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+# END GZIP
+
+# Prevents directory browsing
+Options -Indexes
