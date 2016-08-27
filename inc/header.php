@@ -65,6 +65,8 @@
 			$navi_location = preg_replace($pattern, "", $navi_location);
 			$pattern = '/.html/';
 			$navi_location = preg_replace($pattern, "", $navi_location);
+			$pattern = '/\?thanks/';
+			$navi_location = preg_replace($pattern, "", $navi_location);
 
 			switch ($navi_location) {
 				case '/contact': $navi = 5;break;
