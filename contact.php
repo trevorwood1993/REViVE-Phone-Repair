@@ -7,10 +7,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 	$errors = [];
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$address = $_POST['address'];
-	$message = $_POST['message'];
+	$name 		= htmlspecialchars(trim($_POST['name']));
+	$email 		= htmlspecialchars(trim($_POST['email']));
+	$address 	= htmlspecialchars(trim($_POST['address']));
+	$message 	= htmlspecialchars(trim($_POST['message']));
+
 
 	if($address != ""){
 		$errors[] = "Address field should be empty";
