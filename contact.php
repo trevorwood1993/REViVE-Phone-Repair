@@ -6,9 +6,9 @@ $data["covington"] = [];
 $data["mandeville"] = [];
 
 $data["covington"]["email"] = "ReviveCovington@gmail.com";
-$data["covington"]["phone"] = "+1 985-624-4994";
+$data["covington"]["phone"] = "+1 985-302-5033";
 $data["mandeville"]["email"] = "ReviveMandeville@gmail.com";
-$data["mandeville"]["phone"] = "+1 985-302-5033";
+$data["mandeville"]["phone"] = "+1 985-624-4994";
 
 
 
