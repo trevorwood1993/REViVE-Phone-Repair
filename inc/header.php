@@ -103,12 +103,13 @@
 					echo '<h2>About Us</h2>';
 					break;
 				default://home
-					echo 
 					// '<a href="https://www.facebook.com/REViVEphonerepair"><img alt="Facebook" src="/css/img/facebook.png"></a>
 					// <a href="https://twitter.com/REViVErepair"><img alt="Twitter" src="/css/img/twitter.png"></a>';
 
-					'<a href="https://www.facebook.com/REViVEphonerepair"><img alt="Facebook" src="/css/img/facebook-blue-trans.png"></a>
-					<a href="https://twitter.com/REViVErepair"><img alt="Twitter" src="/css/img/twitter-blue-trans.png"></a>';
+					echo '<a href="https://www.facebook.com/REViVEphonerepair"><img alt="Facebook" src="/css/img/facebook-blue-trans.png"></a>';
+					// echo '<a href="https://twitter.com/REViVErepair"><img alt="Twitter" src="/css/img/twitter-blue-trans.png"></a>';
+					echo '<a href="https://www.instagram.com/revivephonerepair/"><img alt="Instagram" src="/css/img/instagram.jpg"></a>';
+					
 					break;
 			}
 

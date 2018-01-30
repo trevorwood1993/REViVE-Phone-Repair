@@ -42,8 +42,13 @@ function showSlides(n) {
 
 
 var myVar = setInterval(myTimer, slideShowSpeed);
+first = 1;
 function myTimer() {
-    showSlides(slideIndex+=1);
+  if(first == 1){
+    first = 0;
+    return;
+  }
+  showSlides(slideIndex+=1);
 }
 
 

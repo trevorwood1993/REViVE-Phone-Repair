@@ -3,18 +3,14 @@ $page_title = "Home - Revive Phone Repair";
 include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php");
 
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
+// error_reporting(-1);
+// ini_set('display_errors', 'On');
 
 ?>
 
 
 <div>
 	
-
-	<!-- <div class="store_div">
-		<img alt="Revive Phone Repair Store" src="/css/img/store.png">
-	</div> -->
 
 	<?php 
 	$pathsToSlides = [//paths
