@@ -30,13 +30,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active2";
 
-  // var height = slides[slideIndex-1].clientHeight-5;
-  // if(height >= 50){
-  //   var addMargin = (maxHeightSlide - height)/2;
-  //   if(addMargin >= 1){
-  //     slides[slideIndex-1].style.margin = addMargin+"px 0px 0px 0px";
-  //   }
-  // }
+  var height = slides[slideIndex-1].clientHeight-5;
+  if(height >= maxHeightSlide){
+    maxHeightSlide = height;
+    updateSlideHeight();
+  }
 }
 
 
@@ -75,13 +73,16 @@ function calculateHeightOfSlides(){
   if(maxHeightSlide > 50){
     checkLimit = 0;
     // $('.mySlides').css({"height":maxHeightSlide});
-    $(".slideshow-container").css({"height":maxHeightSlide});
+    updateSlideHeight();
   }else if(checkLimit <= 10){
     checkLimit++;
     setTimeout(function(){ 
       calculateHeightOfSlides() 
     }, 500);
   }  
+}
+function updateSlideHeight(){
+  $(".slideshow-container").css({"height":maxHeightSlide});
 }
 
 calculateHeightOfSlides();
