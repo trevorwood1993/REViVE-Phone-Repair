@@ -13,7 +13,7 @@
 
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700|Coustard' rel='stylesheet' type='text/css'>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -70,7 +70,7 @@
 
 			switch ($navi_location) {
 				case '/contact': $navi = 5;break;
-				case '/location': $navi = 4;break;
+				case '/locations': $navi = 4;break;
 				case '/services': $navi = 3;break;
 				case '/about': $navi = 2;break;
 				case '/': $navi = 1;break;
@@ -82,7 +82,7 @@
 				<li <?php if($navi == 1){echo 'class="active"';} ?>><a href="/">Home</a></li>
 				<li <?php if($navi == 2){echo 'class="active"';} ?>><a href="/about">About</a></li>
 				<li <?php if($navi == 3){echo 'class="active"';} ?>><a href="/services">Services</a></li>
-				<li <?php if($navi == 4){echo 'class="active"';} ?>><a href="/location">Location</a></li>
+				<li <?php if($navi == 4){echo 'class="active"';} ?>><a href="/locations">Locations</a></li>
 				<li <?php if($navi == 5){echo 'class="active"';} ?>><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
@@ -93,8 +93,8 @@
 				case 5://contact
 					echo '<h2>Contact Us</h2>';
 					break;
-				case 4://location
-					echo '<h2>Location</h2>';
+				case 4://locations
+					echo '<h2>Locations</h2>';
 					break;
 				case 3://services
 					echo '<h2>Revive Services</h2>';

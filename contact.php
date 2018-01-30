@@ -1,21 +1,40 @@
 <?php 
 
+
+$data = [];
+$data["covington"] = [];
+$data["mandeville"] = [];
+
+$data["covington"]["email"] = "ReviveCovington@gmail.com";
+$data["covington"]["phone"] = "+1 985-624-4994";
+$data["mandeville"]["email"] = "ReviveMandeville@gmail.com";
+$data["mandeville"]["phone"] = "+1 985-302-5033";
+
+
+
 if($_SERVER['REQUEST_METHOD'] == "POST"){
-
-	$send_to_this_email = "REViVEphonerepair@yahoo.com";
-
 
 	$errors = [];
 
+	$location = intval($_POST['location']);
 	$name 		= htmlspecialchars(trim($_POST['name']));
 	$email 		= htmlspecialchars(trim($_POST['email']));
 	$address 	= htmlspecialchars(trim($_POST['address']));
 	$message 	= htmlspecialchars(trim($_POST['message']));
 
 
+
 	if($address != ""){
 		$errors[] = "Address field should be empty";
 	}
+
+	if($location == 1){
+		$send_to_this_email = $data["covington"]["email"];
+	}else{
+		$send_to_this_email = $data["mandeville"]["email"];
+	}
+
+
 
 	if(!empty($name)){
 		$name = substr($name,0,50);
@@ -74,8 +93,16 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php");
 	</div>
 
 	<div class="contact_info">
-		<p>Phone: (985)624-4994</p>
-		<p>Email: REViVEphonerepair@yahoo.com</p>
+		<div class="contact_div">
+			<h2>Covington</h2>
+			<p><?php echo $data["covington"]["phone"]; ?></p>
+			<p><?php echo $data["covington"]["email"]; ?></p>
+		</div>
+		<div class="contact_div">
+			<h2>Mandeville</h2>
+			<p><?php echo $data["mandeville"]["phone"]; ?></p>
+			<p><?php echo $data["mandeville"]["email"]; ?></p>
+		</div>
 		<div style="clear:both;"></div>
 	</div>
 
@@ -102,6 +129,11 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php");
 		<div class="contact_form">
 			<h2 style="text-align:center;">Contact Form:</h2>
 			<form action="/contact" method="post">
+				<label for="location">Location</label>
+				<select name="location" id="location">
+					<option value="1">Covington</option>
+					<option value="2">Mandeville</option>
+				</select>
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name" <?php if(isset($name)){echo 'value="'.htmlspecialchars($name).'"';} ?>>
 				<label for="email">Email</label>

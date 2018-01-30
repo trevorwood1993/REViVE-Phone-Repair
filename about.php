@@ -5,10 +5,16 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php");
 
 
 <div class="about_main">
-	<p>REViVE is a new business in Mandeville, Louisiana.  If you are familiar with Donut King or Usual Suspects chicken fingers, we are located in the same shopping center.</p>
+	<p>Mission; Our mission at Revive has always been simple:</p>
 
-	<p>REViVE may be new but we have been in the smartphone business for about 5 years.
-This is our first shot at bringing customers a convenient location for all of their smartphone repair and buyback needs.  Our goal is to provide fast and reliable service to relieve the stress that the crisis of being without our smartphone brings.</p>
+	<p>To be the best at all device related repairs.</p>
+
+ 
+	<p>
+We pride ourselves on having the best prices, outstanding customer service, unrivaled integrity and the highest quality parts available. However we don’t stop there; we are aware of the stress that arises from being without your smart device, so you can count on Revive to provide you with the fastest and most reliable service.
+	</p>
+
+	<p>"If you want your phone to thrive, drive over to Revive"</p>
 </div>
 
 

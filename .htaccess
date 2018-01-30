@@ -5,7 +5,7 @@ RewriteRule ^index$ index.php [NC,L,B,QSA]
 RewriteRule ^about$ about.php [NC,L,B,QSA]
 RewriteRule ^contact$ contact.php [NC,L,B,QSA]
 RewriteRule ^services$ services.php [NC,L,B,QSA]
-RewriteRule ^location$ location.php [NC,L,B,QSA]
+RewriteRule ^locations$ locations.php [NC,L,B,QSA]
 
 RewriteRule ^index.html$ index.php [NC,L,B,QSA]
 RewriteRule ^about.html$ about.php [NC,L,B,QSA]
