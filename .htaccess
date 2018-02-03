@@ -1,6 +1,25 @@
 Options -MultiViews
 RewriteEngine On
 
+
+# ==========================================================
+# == Uncomment for production
+# ==========================================================
+
+# test this before using, should remove www
+# RewriteBase /
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+# ==========================================================
+# == Comment out for development
+# ==========================================================
+
+
 RewriteRule ^index$ index.php [NC,L,B,QSA]
 RewriteRule ^about$ about.php [NC,L,B,QSA]
 RewriteRule ^contact$ contact.php [NC,L,B,QSA]
