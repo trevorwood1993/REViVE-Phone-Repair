@@ -98,11 +98,6 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php");
 			<p><?php echo $data["covington"]["phone"]; ?></p>
 			<p><?php echo $data["covington"]["email"]; ?></p>
 		</div>
-		<div class="contact_div">
-			<h2>Mandeville</h2>
-			<p><?php echo $data["mandeville"]["phone"]; ?></p>
-			<p><?php echo $data["mandeville"]["email"]; ?></p>
-		</div>
 		<div style="clear:both;"></div>
 	</div>
 
@@ -132,7 +127,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php");
 				<label for="location">Location</label>
 				<select name="location" id="location">
 					<option value="1">Covington</option>
-					<option value="2">Mandeville</option>
+					<!-- <option value="2">Mandeville</option> -->
 				</select>
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name" <?php if(isset($name)){echo 'value="'.htmlspecialchars($name).'"';} ?>>
